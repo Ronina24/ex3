@@ -22,7 +22,7 @@ body {
   width: 1000px;
   margin: 0px auto;
   font-size: 14px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #layer1 header {
@@ -49,7 +49,7 @@ ul {
 
 li:hover {
   opacity: 0.4;
-  background-color: grey
+  background-color: grey;
 }
 
 #layer1 a {
@@ -213,22 +213,86 @@ aside section:nth-child(2) {
   position: relative;
 }
 
-#logoLayout3 {
-  background-image: url("../layouts/image.png");
-  width: 91px;
-  height: 50px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: block;
+@media (max-width: 600px) {
+
+  #layer3 {
+    width: 500px;
+  }
+  body {
+    width: 500px;
+  }
+  #layer3 header {
+    width: 100%;
+  }
+  #layer3 #logo {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #layer3 article {
+    width: 100%;
+  }
+  #layer3 aside {
+    display: none;
+  }
+}
+
+#layer3 header section {
+  font-size: 140px;
+  position: absolute;
+  color: white;
+  margin-left: 207px;
+  margin-top: 127px;
+  cursor: pointer;
+}
+
+@media (min-width: 601px) {
+  #layer3 article {
+    width: 50%;
+  }
+  #layer3 {
+    width: 1000px;
+  }
+
+  #layer3 header {
+    width: 50%;
+  }
+
+  #layer3 #logo {
+    margin-top: 38px;
+    margin-left: 36px;
+  }
+
+  #layer3 aside {
+    width: 100%;
+    height: 500px;
+    background-color: #517a8c;
+    float: none;
+  }
+}
+
+#layer3 {
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+
+#layer3 main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#layer3 header {
+  height: 500px;
+  background-color: black;
   position: relative;
 }
 
 #layer3 ul {
-  background-color: bisque;
-    position: absolute;
+  background-color: pink;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  height: 15%;
+  height: 62px;
 }
 
 #layer3 ul > * {
@@ -239,102 +303,30 @@ aside section:nth-child(2) {
 #layer3 li a {
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
   height: 100%;
 }
 
-@media screen and (max-width: 499px) {
-    #layer3 article {
-        flex: 100%;
-    }
-    #layer3 header {
-        flex: 100%;
-    }
-    #layer3 main {
-    display: flex;
-    flex-wrap: wrap;
-    height: 90vh;
-}
-#logoLayout3 {
-    top: 3%;
-    margin-left: auto;
-    margin-right: auto;
-}
-#layer3 {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  #layer3 header {
-      flex: 50%;
-    }
-    
-    #layer3 article {
-    flex: 50%;
-  }
-
-  #layer3 main {
-      display: flex;
-      flex-wrap: wrap;
-      height: 90vh;
-    }
-    #layer3 {
-      width: 50%;
-    }
-
-  #layer3 div {
-    background-color: #517a8c;
-    display: flex;
-    width: 100%;
-    flex: 100%;
-  }
-  #logoLayout3 {
-    left: 5%;
-    top: 8%;
-  }
-}
-
-#layer3 footer {
-  height: 10vh;
-}
-
-#layer3 header {
-  background-color: black;
-  position: relative;
-  /* justify-content: center;
-  justify-items: center;
-  align-items: center; */
+#layer3 article {
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #layer3 article > * {
-  width: 50%;
-  height: 50%;
-  float: left;
+  width: 250px;
+  height: 250px;
 }
 
 #layer3 article section:first-child {
-    background-color: rgba(0, 0, 0, 0.75);
-  }
+  background-color: rgba(0, 0, 0, 0.75);
+}
 #layer3 article section:nth-child(2) {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 #layer3 article section:nth-child(3) {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 #layer3 article section:nth-child(4) {
   background-color: rgba(0, 0, 0, 0);
-}
-
-
-#layer3 header section {
-    font-size: 83px;
-    position:absolute;
-    color: white;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 85%;
-    align-items: center;
 }

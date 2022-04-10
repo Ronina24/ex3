@@ -20,23 +20,20 @@ function changeColor(square) {
     square.style.backgroundColor = "";
   } else square.style.backgroundColor = "purple";
 }
-//   document.getElementsByTagName('div')[1].setAttribute('onclick', 'myPlus(this)');
+
 
 const firstElem = document.createElement("img");
-firstElem.src = "../layouts/first.png";
+firstElem.src = "layouts/first.png";
 const copy = firstElem.cloneNode();
-
 const secElem = document.createElement("img");
-secElem.src = "../layouts/second.png";
+secElem.src = "layouts/second.png";
 const thirdElem = document.createElement("img");
-thirdElem.src = "../layouts/third.png";
+thirdElem.src = "layouts/third.png";
 const fourthElem = document.createElement("img");
-fourthElem.src = "../layouts/four.png";
+fourthElem.src = "layouts/four.png";
 
 var count = 0;
-console.log("UYTT");
 function myPlus() {
-  console.log(count);
   let list = document.getElementsByTagName("section");
 
   if (count == 0) {
